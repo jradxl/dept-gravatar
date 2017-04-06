@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RIDER_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/Applications/D.Applications.GravatarImporter" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/Models/D.Models.Common" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/Models/D.Models.GraphAPI" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/Services/D.Services.Cryptography" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/Services/D.Services.GraphAPI" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/Services/D.Services.ImageDownloader" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/Web/D.Web.GravatarServer" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../packages" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Applications/D.Applications.GravatarImporter/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Applications/D.Applications.GravatarImporter/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Models/D.Models.Common/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Models/D.Models.Common/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Models/D.Models.GraphAPI/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Models/D.Models.GraphAPI/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Services/D.Services.Cryptography/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Services/D.Services.Cryptography/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Services/D.Services.GraphAPI/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Services/D.Services.GraphAPI/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Services/D.Services.ImageDownloader/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Services/D.Services.ImageDownloader/obj" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Web/D.Web.GravatarServer/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/../../src/Web/D.Web.GravatarServer/obj" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -5,7 +5,8 @@
     <AssemblyName>D.Applications.GravatarImporter</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>D.Applications.GravatarImporter</PackageId>
-    <UserSecretsId>netcore-D.Applications.GravatarImporter</UserSecretsId>
+    <!--<UserSecretsId>netcore-D.Applications.GravatarImporter</UserSecretsId>-->
+    <UserSecretsId>John-Gravatar</UserSecretsId>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
     <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
@@ -13,7 +14,7 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <None Update="appsettings.json;appsettings.*.json;Gravatars\**\*">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -46,7 +47,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.0-msbuild3-final" />
   </ItemGroup>
 
 </Project>

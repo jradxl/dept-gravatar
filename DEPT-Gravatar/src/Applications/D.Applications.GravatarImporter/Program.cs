@@ -24,6 +24,8 @@ namespace D.Applications.GravatarImporter
         private const string defaultEnvironment = "Development";
         public static void Main(string[] args)
         {
+            Console.WriteLine("Program Dept Gravatar Starting.");
+
             environment = Environment.GetEnvironmentVariable("DEPT-GRAVATAR_Environment");
 
             if (args != null && args.Count() == 1)
@@ -46,6 +48,8 @@ namespace D.Applications.GravatarImporter
 
             app.Run().Wait();
 
+            Console.WriteLine("Program Finished. Press Enter key to Quit.");
+            Console.ReadLine();
         }
 
         private static void ConfigureServices(IServiceCollection services)
@@ -75,7 +79,7 @@ namespace D.Applications.GravatarImporter
         private static IConfigurationRoot GetConfiguration()
         {
             IConfigurationBuilder configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
+                //Now Optional .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: true)
                 .AddJsonFile($"appsettings.{environment.ToLowerInvariant()}.json", optional: true)
                 //these EnvironmentVariables will override the appsettings.json and should be set like DEPT-GRAVATAR_GraphAPI:AdminAccessToken
@@ -90,7 +94,7 @@ namespace D.Applications.GravatarImporter
                 //User secrets should only be used in development but console apps do not have an environment
                 //avoid using Environment variables during development
                 //http://asp.net-hacker.rocks/2016/07/11/user-secrets-in-aspnetcore.html
-                configuration.AddUserSecrets();
+                configuration.AddUserSecrets("John-Gravatar");
             }
 
             return configuration.Build();
